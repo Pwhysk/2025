@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto</title>
+    <style>
+        /* Styling untuk galeri */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+            gap: 10px;
+            margin: 20px;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.1); /* Efek zoom saat hover */
+        }
+        
+        /* Responsif: satu kolom di layar kecil */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr; /* Satu kolom */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Galeri Foto</h1>
+    <div class="gallery">
+        <a href="file:///C:/Users/bagus/OneDrive/Desktop/Navbar/danaubrantan.html" target="_blank">
+            <img src="c:\Users\bagus\Downloads\DanauBratan.jpg" alt="Foto 1">
+            <figcaption>Gambar 1: Danau Bratan</figcaption>
+        </a>
+        
+        <a href="https://id.wikipedia.org/wiki/Borobudur" target="_blank">
+            <img src="c:\Users\bagus\Downloads\CandiBorobudur.jpg" alt="Foto 2">
+            <figcaption>Gambar 2: Candi Borobudur</figcaption>
+        </a>
+        
+        <a href="https://id.wikipedia.org/wiki/Danau_Toba" target="_blank">
+            <img src="c:\Users\bagus\Downloads\danautoba1.jpg" alt="Foto 3">
+            <figcaption>Gambar 3: Danau Toba</figcaption>
+        </a>
+        
+        <a href="https://id.wikipedia.org/wiki/Gunung_Bromo" target="_blank">
+            <img src="c:\Users\bagus\Downloads\Gunungbromo.jpeg" alt="Foto 4">
+            <figcaption>Gambar 4: Gunung Bromo</figcaption>
+        </a>
+        
+        <a href="https://www.indonesia.travel/id/id/destinasi/bali-nusa-tenggara/labuan-bajo.html" target="_blank">
+            <img src="c:\Users\bagus\Downloads\labuanbajo2.jpg" alt="Foto 5">
+            <figcaption>Gambar 5: Labuan Bajo</figcaption>
+        </a>
+        
+        <a href="https://id.wikipedia.org/wiki/Kepulauan_Raja_Ampat" target="_blank">
+            <img src="c:\Users\bagus\Downloads\rajaempat.jpg" alt="Foto 6">
+            <figcaption>Gambar 6: Raja Ampat</figcaption>
+        </a>
+    </div>
+</body>
+</html>
