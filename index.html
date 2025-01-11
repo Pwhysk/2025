@@ -3,68 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeri Foto</title>
+    <title>Identitas Anggota Kelompok</title>
     <style>
-        /* Styling untuk galeri */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 kolom */
-            gap: 10px;
-            margin: 20px;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
         }
-        
-        .gallery img {
-            width: 100%;
-            height: auto;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            cursor: pointer;
-            transition: transform 0.3s ease;
         }
-        
-        .gallery img:hover {
-            transform: scale(1.1); /* Efek zoom saat hover */
+        h1 {
+            text-align: center;
+            color: #333;
         }
-        
-        /* Responsif: satu kolom di layar kecil */
-        @media (max-width: 768px) {
-            .gallery {
-                grid-template-columns: 1fr; /* Satu kolom */
-            }
+        .member {
+            margin-bottom: 20px;
+        }
+        .member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .member-info {
+            display: flex;
+            align-items: center;
+        }
+        .member-info h3 {
+            margin: 0;
+            color: #444;
+        }
+        .member-info p {
+            color: #555;
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
-    <h1>Galeri Foto</h1>
-    <div class="gallery">
-        <a href="file:///C:/Users/bagus/OneDrive/Desktop/Navbar/danaubrantan.html" target="_blank">
-            <img src="c:\Users\bagus\Downloads\DanauBratan.jpg" alt="Foto 1">
-            <figcaption>Gambar 1: Danau Bratan</figcaption>
-        </a>
-        
-        <a href="https://id.wikipedia.org/wiki/Borobudur" target="_blank">
-            <img src="c:\Users\bagus\Downloads\CandiBorobudur.jpg" alt="Foto 2">
-            <figcaption>Gambar 2: Candi Borobudur</figcaption>
-        </a>
-        
-        <a href="https://id.wikipedia.org/wiki/Danau_Toba" target="_blank">
-            <img src="c:\Users\bagus\Downloads\danautoba1.jpg" alt="Foto 3">
-            <figcaption>Gambar 3: Danau Toba</figcaption>
-        </a>
-        
-        <a href="https://id.wikipedia.org/wiki/Gunung_Bromo" target="_blank">
-            <img src="c:\Users\bagus\Downloads\Gunungbromo.jpeg" alt="Foto 4">
-            <figcaption>Gambar 4: Gunung Bromo</figcaption>
-        </a>
-        
-        <a href="https://www.indonesia.travel/id/id/destinasi/bali-nusa-tenggara/labuan-bajo.html" target="_blank">
-            <img src="c:\Users\bagus\Downloads\labuanbajo2.jpg" alt="Foto 5">
-            <figcaption>Gambar 5: Labuan Bajo</figcaption>
-        </a>
-        
-        <a href="https://id.wikipedia.org/wiki/Kepulauan_Raja_Ampat" target="_blank">
-            <img src="c:\Users\bagus\Downloads\rajaempat.jpg" alt="Foto 6">
-            <figcaption>Gambar 6: Raja Ampat</figcaption>
-        </a>
+
+    <div class="container">
+        <h1>Identitas Anggota Kelompok</h1>
+
+        <!-- Anggota 1 -->
+        <div class="member">
+            <div class="member-info">
+                <div>
+                    <h3>Nama: Bagus Prasetya</h3>
+                    <p><strong>Tanggal lahir:</strong> 20 June 2009</p>
+                    <p><strong>Hobi:</strong> Membaca</p>
+                    <p><strong>Alamat:</strong> Jl. Sempurna</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Anggota 2 -->
+        <div class="member">
+            <div class="member-info">
+                <div>
+                    <h3>Nama: Bayu Putra</h3>
+                    <p><strong>Tanggal Lahir:</strong> 21 November 2009</p>
+                    <p><strong>Hobi:</strong> Bermain Bola Basket</p>
+                    <p><strong>Alamat:</strong> Jl. Pelita 1</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Anggota 3 -->
+        <div class="member">
+            <div class="member-info">
+                <div>
+                    <h3>Nama: Tifani Aqila Fakhry</h3>
+                    <p><strong>Tanggal Lahir:</strong>strong 21 April 2009</p>
+                    <p><strong>Hobi:</strong> Belajar Matematika</p>
+                    <p><strong>Alamat:</strong> Jl. Soekarno</p>
+                </div>
+            </div>
+        </div>
+
     </div>
+
 </body>
 </html>
